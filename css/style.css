@@ -1,0 +1,275 @@
+/* CSS Document */
+body, html {
+    height: 100%;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+	text-align: center;
+}
+
+a {
+	color: #A2D1EA;
+    text-decoration: underline;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #D1E8F5;
+    text-decoration: underline;
+}
+
+.jumbotron p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+p, label {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+}
+
+p {
+    line-height: 23px;
+	display: inline-block;
+}
+
+.image1 { 
+    /* The image used */
+    background-image: url("../images/mikael-kristenson-242070-unsplash-blue.jpg");
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.image2 { 
+    /* The image used */
+    background-image: url("../images/raleigh-convention-center-blue.jpg");
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.image3 { 
+    /* The image used */
+    background-image: url("../images/ian-schneider-66374-unsplash-blue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+	
+    background-size: cover;
+	min-height: 80vh;
+	text-align: center;
+}
+
+.parallax { 
+    /* Full height */
+    min-height: 85vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+	max-height: 50vh;
+	max-width: 50vw;
+}
+
+.logo2 {
+	width: 100%;
+	min-width: 150px;
+	max-width: 200px;
+	height: auto;
+	grid-row: 1/4;
+}
+
+.uxpalogo {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: auto;
+}
+
+#info {
+	min-height: 30vh;
+}
+
+#info .row, #conf-by .row {
+	padding: 10vh 0;
+	min-height: 30vh;
+}
+#info h3 {
+	padding-top: .8rem;
+}
+
+#conf-by .col-xs-12 {
+	display: flex;
+	justify-content: center;
+}
+
+#conf-by h2 {
+	margin: 0 auto 3rem;
+}
+
+
+.jumbotron, footer {
+	color: white;
+	/* blue color
+	background-color: #052049; */
+	background-color: #2B4264;
+	display: flex;
+}
+
+
+footer /*, .container-fluid */{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+/*
+footer {
+	padding: 1rem;
+}*/
+.container-fluid .row {
+	width: 100%;
+}
+
+footer p {
+	align-self: flex-end;
+}
+
+.logo-soc-media {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(3, auto);
+	justify-content: center;
+	align-items: center;
+}
+
+.fab {
+    color: white;
+	padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fab:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+label {
+	text-align: center!important;
+}
+
+.form-control {
+	display: block;
+    width: 80%;
+	margin: auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+	color: #fff;
+	background-color: #FF5823;
+	border-color: #FF5823;
+	text-align: center;
+	
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #FF8A65;
+    border-color: #FF5823;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.btn:focus, .btn:hover {
+    text-decoration: none;
+}
+
+
+/* small screen */
+@media (min-width: 576px){
+	#conf-by h2 {
+		margin: auto;
+	}
+	
+	.form-control {
+		width: 100%;
+		max-width: 20rem;
+	}
+
+	.uxpalogo {
+		max-width: 500px;
+	}
+
+}
+
+/*
+* medium screen *
+@media (min-width: 992px){
+}
+
+* large screen *
+@media (min-width: 992px){
+}
+
+* X-large screen *
+@media (min-width: 1200px){
+}*/
