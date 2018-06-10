@@ -1,8 +1,14 @@
 /* CSS Document */
+:root {
+	font-size: 18px;
+}
+
 body, html {
     height: 100%;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1rem;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6, .section2 p {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 	text-align: center;
@@ -20,19 +26,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.jumbotron p {
+header p {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-}
-
-p, label {
-    font-family: 'Cantarell', sans-serif;
-    font-size: 17px;
+	font-size: 1.33333rem;
 }
 
 p {
-    line-height: 23px;
-	display: inline-block;
+ 	display: inline-block;
 }
 
 .image1 { 
@@ -74,14 +75,15 @@ p {
 }
 
 .logo {
-	max-height: 50vh;
+	min-height: 200px;
+	max-height: 35vh;
+	min-width: 200px;
 	max-width: 50vw;
 }
 
 .logo2 {
 	width: 100%;
-	min-width: 150px;
-	max-width: 200px;
+	max-width: 8.5rem;
 	height: auto;
 	grid-row: 1/4;
 }
@@ -99,16 +101,42 @@ p {
 	margin: auto;
 }
 
+.section1 {
+	margin-top: 1rem;
+}
+
+.tagline {
+	display: grid;
+	justify-content: center;
+	color: #052049;
+	font-size: 1.3333rem;
+	text-align: center;
+}
+
+.tagline span {
+	color: #FF5823;
+}
+
+
 #info {
 	min-height: 30vh;
 }
 
 #info .row, #conf-by .row {
-	padding: 10vh 0;
 	min-height: 30vh;
 }
+
+#conf-by .row {
+	padding: 10vh 0;
+}
+
 #info h3 {
 	padding-top: .8rem;
+}
+
+#conf-by .col-xs-12 {
+	display: flex;
+	justify-content: center;
 }
 
 #conf-by .col-xs-12 {
@@ -120,13 +148,13 @@ p {
 	margin: 0 auto 3rem;
 }
 
-
 .jumbotron, footer {
 	color: white;
 	/* blue color
 	background-color: #052049; */
 	background-color: #2B4264;
 	display: flex;
+	border-radius: unset;
 }
 
 
@@ -145,8 +173,14 @@ footer {
 	width: 100%;
 }
 
-footer p {
+.credits {
 	align-self: flex-end;
+	margin-top: 20px;
+}
+
+
+.element-invisible {
+	display: none;
 }
 
 .logo-soc-media {
@@ -157,11 +191,15 @@ footer p {
 	align-items: center;
 }
 
+.logo-soc-media, .contact, .follow {
+	width: 100%;
+	margin: 20px 10px;
+}
+
 .fab {
     color: white;
-	padding: 20px;
-    font-size: 30px;
-    width: 50px;
+	padding-left: 15px;
+    font-size: 1.7rem;
     text-align: center;
     text-decoration: none;
 	-webkit-font-smoothing: antialiased;
@@ -179,12 +217,14 @@ footer p {
 
 label {
 	text-align: center!important;
+    font-family: 'Cantarell', sans-serif;
+	margin: unset;
 }
 
 .form-control {
 	display: block;
     width: 80%;
-	margin: auto;
+	margin: 10px auto;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -201,7 +241,6 @@ label {
 	background-color: #FF5823;
 	border-color: #FF5823;
 	text-align: center;
-	
 	display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -246,6 +285,10 @@ label {
 
 /* small screen */
 @media (min-width: 576px){
+	#info .row {
+		padding: 5vh 0;
+	}
+
 	#conf-by h2 {
 		margin: auto;
 	}
@@ -261,15 +304,37 @@ label {
 
 }
 
-/*
-* medium screen *
-@media (min-width: 992px){
+
+/* medium screen */
+@media (min-width: 768px){
+	#info .row {
+		padding: 10vh 0;
+	}
+
+	.logo-soc-media, .follow {
+		width: 25%;
+	}
+
+	.contact {
+		width: 41%;
+	}
+
 }
 
-* large screen *
-@media (min-width: 992px){
-}
 
-* X-large screen *
-@media (min-width: 1200px){
+/* large screen */
+/*@media (min-width: 992px){
 }*/
+
+/* X-large screen */
+@media (min-width: 1200px){
+	:root {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 2000px){
+	:root {
+		font-size: 36px;
+	}
+}
